@@ -1,5 +1,12 @@
 //https://leetcode.com/problems/valid-parentheses/
 
+fun main() {
+    print(isValid("[][][]()"))
+    print(isValid("[][][]()["))
+    print(isValid("[][()]()"))
+    print(isValid("[({})]"))
+}
+
 fun isValid(s: String): Boolean {
     var mutableString = s.toMutableList()
     var i = 0
